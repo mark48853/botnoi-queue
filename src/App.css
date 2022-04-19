@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');*/
+
+* {
+	margin: .3rem 0;
+	font-family: Kanit;
+	
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	color: #607590;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+	margin-left: 3rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header {
+	/*text-align: center;*/
+	
+	color: #445565;
+	background-color: #BBC5D1;
+	padding: 1rem 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+main {
+	/*background: brown;*/
+	padding: 2rem;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	gap: 4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+	font-size: 3rem;
+}
+
+h2 { 
+	font-size: 2.5rem;
+}
+
+p {
+	font-size: 2rem;
+}
+
+hr {
+	border-color: #BBC5D1;
+}
+
+#queue-display {
+	color: #445565;
+	text-align: center;
+	padding: 2rem 7.5rem;
+	/*border: .5px solid #BBC5D1;*/
+	box-shadow: 0px 2px 3px #BBC5D1;
+	/*background-color: #445565;
+	color: #FFFFFF;*/
+	border-top: 0;
+	border-radius: 10px;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	gap: 1rem;
+}
+
+#current-queue {
+	color: #445565;
+	/*color: #E0CDA2;*/
+	font-size: 5.75rem;
+	/*border-radius: 10px;*/
+	/*background-color: #445565;*/
+	margin-bottom: 0rem;
+}
+
+#current-name {
+	/*font-size: 2.25rem;*/
+}
+
+#line {
+
+}
+
+#qr {
+	/*border: 10px solid #b69b54;
+	border-radius: 10px;*/
+}
+
+#name {
+	font-size: .75rem;
+	color: #445565;
+	border: 1px solid #445565;
+	border-radius: 3px;
+}
+
+#name::placeholder {
+	color: #445565;
+	opacity: 0.5;
+}
+
+#submit {
+	background-color: #607590;
+	padding: 5px 1rem;
+	border: 0;
+	border-radius: 15px;
+	cursor: pointer;
+	color: #FFFFFF;
+}
+
+#submit:hover {
+	background-color: #445565;
+}
+
+.tips {
+	font-size: .75rem;
+}
+
+.eng:not(.tips)  {
+	font-size: 1rem;
+}
+
+.th {
+	margin-bottom: -1rem;
+	/*gap: 0;*/
+}
+
+#container {
+	display: none; /* change to flex */
+	background-image: linear-gradient(to right, #66a80f, #c0eb75);
+	background-size:cover;
+	color: white;
+	position: absolute;
+	width: 350px;
+	border-radius: 5px;
+	left: 50%;
+	margin-left: -160px;
+	padding: 16px 8px 8px;
+	box-sizing: border-box;
+}
+
+#container .yes {
+	background-color: #5c940d;
+	display: inline-block;
+	border-radius: 5px;
+	border: 2px solid gray;
+	padding: 5px;
+	margin-right: 10px;
+	text-align: center;
+	width: 60px;
+	float: right;
+}
+ 
+#container .no {
+	background-color: #22b8cf;
+	display: inline-block;
+	border-radius: 5px;
+	border: 2px solid gray;
+	padding: 5px;
+	margin-right: 10px;
+	text-align: center;
+	width: 95px;
+	float: right;
+}
+ 
+#container .yes:hover {
+	background-color: #82c91e;
+
+}
+ 
+#container .no:hover {
+	background-color: #99e9f2;
+
+}
+ 
+/* Dialog box message decorating */
+#container .message {
+	text-align: left;
+	padding: 10px 30px;
 }

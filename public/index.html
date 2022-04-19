@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <title>React App</title>
+</head>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+
+    <main>
+      <section id="queue-display">
+        <p class="th">คิวปัจจุบัน</p>
+        <p class="eng">Current queue:</p>
+        <div id = "show">
+          <p id="current-queue"> </p>
+          <p id="current-name">คุณ </p>
+          <p id="current-number" class="eng">จำนวนรอต่อคิว (Queues in line): </p>
+        </div>
+      </section>
+      <br>
+      <div id="confirmation-zone"></div>
+      <section>
+        <section id="line">
+          <p>จองคิวผ่านไลน์ได้ที่</p>
+          <p class="eng">Queue with line:</p>
+          <img id="qr" src="qr.png" alt="" style="width:17.5em;height:17.5m;">
+          <p class="tips">*ท่านจะได้รับการแจ้งเตือนผ่านไลน์เมื่อใกล้ถึงคิวของท่าน</p>
+          <p class="eng tips">You will be notified through Line shortly before your queue.</p>
+          <br>
+          <hr><br>
+          <p>หรือจองได้โดยใช้ชื่อด้านล่าง</p>
+          <p class="eng">Alternatively, you can queue with your name below.</p>
+          <div id="manual">
+            
+          </div>
+    </main>
+
+  </div>
+
+</body>
+
 </html>
